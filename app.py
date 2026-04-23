@@ -11,7 +11,7 @@ import json
 from gtts import gTTS
 from googletrans import Translator
 
-.markdown(
+ST.markdown(
     """
     <style>
     .stApp {
