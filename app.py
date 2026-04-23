@@ -11,6 +11,16 @@ import json
 from gtts import gTTS
 from googletrans import Translator
 
+.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #000080; /* azul navy */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato ha sido publicado \n")
     pass
@@ -26,16 +36,7 @@ port=1883
 client1= paho.Client("GIT-HUBC")
 client1.on_message = on_message
 
-.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #000080; /* azul navy */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 st.title("INTERFACES MULTIMODALES")
 st.subheader("CONTROL POR VOZ")
