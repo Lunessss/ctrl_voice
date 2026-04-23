@@ -26,7 +26,16 @@ port=1883
 client1= paho.Client("GIT-HUBC")
 client1.on_message = on_message
 
-
+.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #000080; /* azul navy */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("INTERFACES MULTIMODALES")
 st.subheader("CONTROL POR VOZ")
